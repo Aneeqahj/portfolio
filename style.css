@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#navbar {
+  background: #884e1b;
+  display: flex;
+  justify-content: inherit;
+  align-items: center;
+  background: #874308;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin: 5%;
+  padding-top: 1%;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 1px;
+  margin: 1%;
+  align-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  gap: 270px;
+}
+
+body {
+  background-color: #884e1b;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.glassmorphism {
+  background: #f5933d;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 5%;
+  padding-top: 5%;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-left: -80%;
+}
+
+.image img {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 750px;
+  height: 550px;
+  margin-left: -30%;
+}
+
+.img-container {
+  display: flex;
+}
+
+.Details {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons {
+  background: rgba(21, 2, 2, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 10px 30px;
+  transition: all 0.3s linear;
+  width: 20%;
+  margin-right: 1%;
+  display: inline-block;
+}
+
+i {
+  display: inline-block;
+}
+
+.glassmorphism-2 {
+  background: #f5933d;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
