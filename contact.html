@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <ul class="navbar-links">
+            <li class="navbar-link"><a class="navlink" href="./index.html">Home</a></li>
+            <li class="navbar-link"><a class="navlink" href="./experience.html">Education and Skills</a></li>
+            <li class="navbar-link"><a class="navlink" href="./projects.html">Projects</a></li>
+            <li class="navbar-link"><a class="navlink" href="./testimonials.html">Testimonials</a></li>
+            <li class="navbar-link"><a class="navlink" href="./contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+      <!-- Contact Form -->
+      <div id="contact" class="contact">
+        <form
+        id="contact-form"
+        method="POST"
+        action="https://formspree.io/f/xpzkqepj"
+      >
+        <input
+          class="contact-input"
+          type="text"
+          name="full_name"
+          id="full_name"
+          placeholder="Name"
+          required
+        />
+        <input
+          class="contact-input"
+          type="tel"
+          name="contact_no"
+          id="contact_no"
+          placeholder="Contact No"
+          required
+        />
+        <input
+          class="contact-input"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          required
+        />
+        <textarea
+          class="contact-input"
+          name="message"
+          id="message"
+          placeholder="Type your message here"
+        ></textarea>
+        <button class="button" type="submit">Submit Information</button>
+      </form>
+    
+</body>
+</html>
