@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experience</title>
     <link rel="stylesheet" href="./style.css">
+    <!-- 3rd Party Links -->
+    <script src="https://kit.fontawesome.com/297e065f7a.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <nav id="navbar">
@@ -20,25 +23,29 @@
     <!-- Glassmorphism container -->
 <div id="skills" class="glassmorphism-2" >
     <div class="education-container">
-        <h2>Education:</h2>
+        <h2 class="edu">Education:</h2>
         <p>Matric - Salt River High School 2015 <br>
             IT tech support NQF4 - ICollege, completed in 2019 waiting on qualification <br>
             Mobile App Development - Salesians Institute Youth Projects 2018 <br>
             Life Skills - Salesians Institute Youth Projects 2018 <br>
             </p>
     </div>
+    <div class="icon" >
     <div class="skills-container">
-        <h2>Skills:</h2>
-        <p> <h3>Soft Skills</h3>
+        
+        <p> <h3 class="skill">Soft Skills:</h3>
             Communication <br>
             Teamwork <br>
             Time Management <br>
             Problem-solving <br>
         </p>
+      
     </div>
-            
+    <i data-aos="flip-right" class="fab fa-html5"></i>
+    </div>
+    <div class="icon1"> <i data-aos="flip-left" class="fab fa-css3"></i>
     <div class="tech-skills"> 
-        <p> <h3>Technical Skills:</h3>
+        <p> <h3 class="skill">Technical Skills:</h3>
             Word <br>
             Excel <br>
             Powerpoint <br>
@@ -46,15 +53,18 @@
             Android <br>
         </p>
     </div>
-    <div class="skills"> 
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3"></i>
-            <i class="fab fa-python"></i>
+    </div>
+    <div class="icon2"> 
+            <i data-aos="flip-right" class="fab fa-python"></i>
     </div>
  
      </div>    
     
 </div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
     
 </body>
 </html>

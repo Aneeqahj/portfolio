@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="./style.css">
+    <!-- 3rd Party links -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <nav id="navbar">
@@ -19,7 +21,7 @@
       <!-- Projects -->
 <div id="projects" class="projects">
     <!-- Project container -->
-        <div class="project-containers">
+        <div data-aos="fade-right" class="project-containers">
           <!-- CARD IMAGE -->
           <img class="img" src="./portfolio pics/Project cards.png" alt="Project cards" />
           <div class="card-details">
@@ -37,6 +39,8 @@
                 class="button"
                 >Live</a
               >
+            </div>
+            <div class="card-buttons">
               <a
                 href="https://github.com/Aneeqahj/Project_cards"
                 target="_blank"
@@ -48,12 +52,12 @@
         </div>
          
          <!-- Project container -->
-         <div class="project-containers">
+         <div data-aos="fade-left" class="project-containers">
             <!-- Card Image -->
             <img class="img" src="./portfolio pics/python.png" alt="Python">
             <div class="card-details">
                 <!-- Card Details -->
-                <h2 class="card-heading">Python temperature convertor</h2>
+                <h2 class="card-heading-py">Temp convertor</h2>
                 <h3 class="card-subtitle">Python using tkinter</h3>
                 <p class="card-description">A temperature convertor using tkinter in python</p>
                 <!-- Card Buttons -->
@@ -61,12 +65,17 @@
                     <a href="https://replit.com/@Aneeqah/Python-temp-convertor#main.py"
                     target="_blank"
                     class="button">live</a>
+                  </div>
+                  <div class="card-buttons">
                     <a href="https://github.com/Aneeqahj/Python-temp-convertor"
                     target="_blank"
                     class="button">Github</a>
-                </div>
+                  </div>
             </div>
-         </div>   
-    
+         </div>  
+         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+         <script>
+          AOS.init();
+        </script>
 </body>
 </html>
