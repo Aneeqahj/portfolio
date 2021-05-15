@@ -8,6 +8,8 @@
 
     <!-- 3rd Party links -->
     <script src="https://kit.fontawesome.com/297e065f7a.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
 <!-- Landing Section -->
@@ -21,15 +23,16 @@
             <li class="navbar-link"><a class="navlink" href="./contact.html">Contact Me</a></li>
         </ul>
     </nav>
+    <button class="nav" onclick="toggleNav()">Menu</button>
     <!-- Glassmorphism Container -->
 <div id="home">
-    <a href="https://github.com/Aneeqahj"><div class="footer"><i class="fab fa-github fa-2x"></i></div></a>
+    <a href="https://github.com/Aneeqahj" target="_blank"><div class="footer" ><i class="fab fa-github fa-2x"></i></div></a>
     <div class="card-home">
         <div class="card-top">
         <!-- Image -->
-            <img src="./portfolio pics/Aneeqah Jones.png" alt="Aneeqah">
+            <img src="./portfolio pics/aneeqah.png" alt="Aneeqah" data-aos="flip-up">
         <!-- Details -->
-            <h1 class="card-Heading">Aneeqah Jones</h1>
+         <div class="style">   <h1 class="card-Heading">Aneeqah Jones</h1>
             <h2>Aspiring Frontend-developer</h2>
               <!-- Buttons -->
         <div class="button-group">
@@ -47,6 +50,7 @@
                     <i class="fas fa-globe fa-2x"></i></a>
          </div>
         </div>
+    </div>
         </div>
     <div class="card-bottom">
           <!-- About Me -->
@@ -59,7 +63,7 @@
                 I'm an honest person and very reliable, I get along well in a team. 
             </p>
             <!-- Passion for code -->
-            <h3 class="sub-title-abt-me"></h3>Passion for code</h3>
+            <h3 class="sub-title-abt-me"></h3></h3>
             <!-- Description -->
             <p class="description">My passion for tech started when my sister started a blog and we had to create a website for that blog. 
                  We didn't understand what was going on so we had to google everything to create the website and ever since then I've been into anything regarding technology and the processes behind making everything work.
@@ -89,6 +93,10 @@
 
         </div>
     </div>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+      <script src="./scripts.js"></script>
 </body>
 </html>
