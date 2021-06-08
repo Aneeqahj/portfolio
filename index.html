@@ -1,102 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aneeqah Jones' Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
 
     <!-- 3rd Party links -->
-    <script src="https://kit.fontawesome.com/297e065f7a.js" crossorigin="anonymous"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-</head>
-<body>
-<!-- Landing Section -->
+    <script
+      src="https://kit.fontawesome.com/297e065f7a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Landing Section -->
     <!-- NavBar -->
     <nav id="navbar">
-        <ul class="navbar-links">
-            <li class="navbar-link"><a class="navlink" href="./index.html">Home</a></li>
-            <li class="navbar-link"><a class="navlink" href="./experience.html">Education and Skills</a></li>
-            <li class="navbar-link"><a class="navlink" href="./projects.html">Projects</a></li>
-            <li class="navbar-link"><a class="navlink" href="./testimonials.html">Testimonials</a></li>
-            <li class="navbar-link"><a class="navlink" href="./contact.html">Contact Me</a></li>
-        </ul>
+      <ul class="navbar-links">
+        <li class="navbar-link">
+          <a class="navlink" href="./index.html">Home</a>
+        </li>
+        <li class="navbar-link">
+          <a class="navlink" href="./experience.html">Resume</a>
+        </li>
+        <li class="navbar-link">
+          <a class="navlink" href="./projects.html">Projects</a>
+        </li>
+        <li class="navbar-link">
+          <a class="navlink" href="./testimonials.html">Testimonials</a>
+        </li>
+        <li class="navbar-link">
+          <a class="navlink" href="./contact.html">Contact</a>
+        </li>
+      </ul>
+      <button class="nav" onclick="toggleNav()">Menu</button>
     </nav>
-    <button class="nav" onclick="toggleNav()">Menu</button>
     <!-- Glassmorphism Container -->
-<div id="home">
-    <a href="https://github.com/Aneeqahj" target="_blank"><div class="footer" ><i class="fab fa-github fa-2x"></i></div></a>
-    <div class="card-home">
+    <div id="home" class="style" class="button-group">
+      <div class="card-home">
         <div class="card-top">
-        <!-- Image -->
-            <img src="./portfolio pics/aneeqah.png" alt="Aneeqah" data-aos="flip-up">
-        <!-- Details -->
-         <div class="style">   <h1 class="card-Heading">Aneeqah Jones</h1>
+          <!-- Image -->
+          <img
+            src="./portfolio pics/portpic.jpg"
+            alt="Aneeqah"
+            data-aos="flip-up"
+          />
+          <!-- Details -->
+          <div class="card-top-details">
+            <h1 class="card-Heading">Aneeqah Jones</h1>
             <h2>Aspiring Frontend-developer</h2>
-              <!-- Buttons -->
-        <div class="button-group">
-        <div class="buttons">
-                    <a href="https://github.com/Aneeqahj"
-                    target="_blank"
-                    class="button-home"
-                    >
-                    <i class="fab fa-github fa-2x"></i> </a>
+            <!-- Buttons -->
+            <div class="buttons">
+              <div class="button1">
+                <a
+                  href="https://github.com/Aneeqahj"
+                  target="_blank"
+                  class="button-home"
+                >
+                  <i class="fab fa-github fa-2x"></i>
+                </a>
+              </div>
+              <div class="button2">
+                <a
+                  href="https://app.netlify.com/teams/aneeqahj/overview"
+                  target="_blank"
+                  class="button-home"
+                  ><span
+                    class="iconify"
+                    data-icon="simple-icons:netlify"
+                    data-inline="false"
+                  ></span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="buttons">
-                    <a href="https://app.netlify.com/teams/aneeqahj/overview"
-                    target="_blank"
-                    class="button-home">
-                    <i class="fas fa-globe fa-2x"></i></a>
-         </div>
-        </div>
-    </div>
-        </div>
-    <div class="card-bottom">
+        <div class="card-bottom">
           <!-- About Me -->
           <div class="about-me">
             <h3 class="sub-title-abt-me">About me</h3>
             <!-- Description -->
             <p class="description">
-                Hi, my name is Aneeqah Jones. <br>
-                I'm a very quiet person in general but I love to make new friends and meet new people.
-                I'm an honest person and very reliable, I get along well in a team. 
+              Hi, my name is Aneeqah Jones. I'm a very quiet person in general
+              but I love to make new friends and meet new people. I'm an honest
+              person and very reliable, I get along well in a team.
             </p>
             <!-- Passion for code -->
-            <h3 class="sub-title-abt-me"></h3></h3>
+            <h3 class="sub-title-abt-me">Passion for code</h3>
             <!-- Description -->
-            <p class="description">My passion for tech started when my sister started a blog and we had to create a website for that blog. 
-                 We didn't understand what was going on so we had to google everything to create the website and ever since then I've been into anything regarding technology and the processes behind making everything work.
+            <p class="description">
+              My passion for tech started when my sister started a blog and we
+              had to create a website for that blog. We didn't understand what
+              was going on so we had to google everything to create the website
+              and ever since then I've been into anything regarding technology
+              and the processes behind making everything work.
             </p>
             <!-- Interests -->
             <h3 class="sub-title-abt-me">Interests</h3>
             <!-- Description -->
             <p class="description">
-                Reading,
-                Listening to music,
-                Gardening,
-                DIY projects,
-                Watching vlogs and
-                Playing board games
+              Reading, Listening to music, Gardening, DIY projects, Watching
+              vlogs and Playing board games
             </p>
+          </div>
+          <!--Personal Information  -->
+          <div class="card-bottom-info">
+            <p><span>Age:</span> 25</p>
+            <p><span>Email:</span> aneeqahjones2@gmail.com</p>
+            <p><span>Residence:</span> South Africa</p>
+            <p><span>Address:</span> Cape Town, SA</p>
+            <p><span>Phone:</span> 082 546 6432</p>
+          </div>
         </div>
-                <!--Personal Information  -->
-                <h3 class="sub-title-pi">
-                <p><span>Age:</span> 25</p>
-                <p><span>Email:</span> aneeqahjones2@gmail.com</p>
-                <p><span>Residence:</span> South Africa</p>
-                <p><span>Address:</span> Cape Town, SA</p>
-                <p><span>Phone:</span> 082 546 6432</p>
-                </h3> 
-               
-            </div>
-
-        </div>
+      </div>
     </div>
+    <a href="https://github.com/Aneeqahj" target="_blank"
+      ><div class="footer"><i class="fab fa-github fa-2x"></i></div
+    ></a>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
-      </script>
-      <script src="./scripts.js"></script>
-</body>
+      AOS.init();
+    </script>
+    <script src="./scripts.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  </body>
 </html>
