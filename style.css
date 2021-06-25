@@ -9,8 +9,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: #835134;
   padding: 0%;
-  display: flex;
-  justify-content: center;
   min-height: 85vh;
 }
 
@@ -44,7 +42,7 @@ body {
   display: flex;
   height: 100%;
   justify-content: center;
-  padding: 1px;
+  padding-bottom: 30px;
   margin: 1%;
   align-content: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -55,7 +53,8 @@ body {
   align-items: center;
 }
 
-.navlink:hover {
+.navlink:hover,
+.navlink.active {
   text-decoration: line-through;
   color: white;
 }
@@ -125,9 +124,10 @@ body {
   box-shadow: 3px 3px 3px #a55425;
   border-radius: 10px;
   overflow: hidden;
-  width: 55vw;
+  width: 90%;
+  max-width: 1000px;
   margin: 0 auto;
-  margin-top: 2%;
+  margin-top: 5%;
 }
 
 .card-top {
@@ -255,6 +255,7 @@ i {
 
 #skills {
   display: flex;
+  padding: 50px;
   justify-content: center;
   align-items: center;
 }
@@ -272,15 +273,17 @@ i {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  margin: 100px;
+  margin: 100px auto;
   padding-top: 1%;
   border: none;
-  width: 55vw;
   padding-top: 3px;
+  max-width: 1200px;
+  width: 90%;
 }
 
 .education-container {
-  margin-right: 30%;
+  width: 100%;
+  /* margin-right: 30%; */
 }
 
 .edu {
@@ -289,14 +292,23 @@ i {
   flex-direction: column;
 }
 
-.skills-container {
+.skills-and-tech {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skills-container,
+.tech-skills {
+  width: 45%;
   /* padding: 40px; */
-  margin-left: -67%;
+  /* margin-left: -67%; */
 }
 
 .progress {
-  width: 200%;
-  max-width: 260px;
+  /* width: 200%; */
+  /* max-width: 260px; */
   height: 6px;
   background: #e1e4e8;
   border-radius: 3px;
@@ -321,20 +333,22 @@ i {
 
 .tech-skills {
   /* padding: 40px; */
-  margin-left: -63%;
+  /* margin-left: -63%; */
 }
 
 .icon {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  max-width: 500px;
 }
 
 .icon i {
   font-size: 90px;
   color: #835134;
-  padding: 30%;
+  /* padding: 10%; */
 }
 
 /* Projects */
@@ -480,9 +494,10 @@ i {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  margin: 5%;
+  margin: 100px auto;
   padding-top: 5%;
-  width: 55vw;
+  width: 90%;
+  max-width: 1200px;
 }
 
 .card {
@@ -547,9 +562,10 @@ i {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  margin: 5%;
+  margin: 0 auto;
   padding-top: 5%;
-  width: 55vw;
+  width: 90%;
+  max-width: 1200px;
 }
 
 .button-con {
@@ -615,9 +631,7 @@ i {
 }
 
 .footer {
-  background: #835134;
-  position: fixed;
-  bottom: 0;
+  background: white;
   z-index: 100;
   width: 100%;
   color: white;
@@ -625,11 +639,11 @@ i {
   padding: 25px;
   text-align: center;
 }
-
+/* 
 .footer:hover {
   font-size: 1.1em;
-  background: white;
-}
+  background: #835134; */
+/* } */
 .nav {
   display: none;
 }
@@ -707,5 +721,28 @@ i {
 
   .about-me {
     margin-left: 0;
+  }
+
+  #skills {
+    padding: 25px;
+  }
+
+  .skills-and-tech {
+    flex-direction: column;
+  }
+
+  .skills-container,
+  .tech-skills {
+    width: 100%;
+  }
+
+  .icon i {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .skills-and-tech {
+    flex-direction: row;
   }
 }

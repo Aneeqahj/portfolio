@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./projects.css" />
     <!-- 3rd Party links -->
-    <scr
+    <script
       src="https://kit.fontawesome.com/297e065f7a.js"
       crossorigin="anonymous"
     ></script>
@@ -22,7 +23,7 @@
           <a class="navlink" href="./experience.html">Resume</a>
         </li>
         <li class="navbar-link">
-          <a class="navlink" href="./projects.html">Projects</a>
+          <a class="navlink active" href="./projects.html">Projects</a>
         </li>
         <li class="navbar-link">
           <a class="navlink" href="./testimonials.html">Testimonials</a>
@@ -32,11 +33,12 @@
         </li>
       </ul>
     </nav>
+    <button class="nav" onclick="toggleNav()">
+      <i class="fas fa-bars"></i>
+    </button>
 
     <!-- ANEEQAH -->
-    <!-- Projects --><a href="https://github.com/Aneeqahj"
-      ><div class="footer"><i class="fab fa-github fa-2x"> Aneeqah Jones</i></div
-    ></a>
+    <!-- Projects -->
     <div id="projects" class="projects">
       <!-- Project container -->
       <div class="project-containers">
@@ -88,8 +90,35 @@
               ></a>
             </button>
             <button class="proj-button">
+              <a href="https://github.com/Aneeqahj/Contact-Form" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Project container -->
+      <div class="project-containers">
+        <!-- CARD IMAGE -->
+        <img
+          class="img"
+          src="./portfolio pics/Screenshot from 2021-06-08 11-35-27.png"
+          alt="Project cards"
+        />
+        <div class="proj-card-info">
+          <h3>Sneaker Site</h3>
+          <!-- BUTTONS -->
+          <div class="proj-buttons">
+            <button class="proj-button">
               <a
-                href="https://github.com/Aneeqahj/Contact-Form"
+                href="https://wonderful-turing-00c6c9.netlify.app/"
+                target="_blank"
+                ><i class="fas fa-globe"></i
+              ></a>
+            </button>
+            <button class="proj-button">
+              <a
+                href="https://github.com/Aneeqahj/sneaker-store"
                 target="_blank"
                 ><i class="fab fa-github"></i
               ></a>
@@ -97,124 +126,95 @@
           </div>
         </div>
       </div>
-<!-- Project container -->
-<div class="project-containers">
-  <!-- CARD IMAGE -->
-  <img
-    class="img"
-    src="./portfolio pics/Screenshot from 2021-06-08 11-35-27.png"
-    alt="Project cards"
-  />
-  <div class="proj-card-info">
-    <h3>Sneaker Site</h3>
-    <!-- BUTTONS -->
-    <div class="proj-buttons">
-      <button class="proj-button">
-        <a
-          href="https://wonderful-turing-00c6c9.netlify.app/"
-          target="_blank"
-          ><i class="fas fa-globe"></i
-        ></a>
-      </button>
-      <button class="proj-button">
-        <a
-          href="https://github.com/Aneeqahj/sneaker-store"
-          target="_blank"
-          ><i class="fab fa-github"></i
-        ></a>
-      </button>
-    </div>
-  </div>
-</div>
-<!-- Project container -->
-<div class="project-containers">
-  <!-- CARD IMAGE -->
-  <img
-    class="img"
-    src="./portfolio pics/testimonialslider.png"
-    alt="Project cards"
-  />
-  <div class="proj-card-info">
-    <h3>Testimonial Slider</h3>
-    <!-- BUTTONS -->
-    <div class="proj-buttons">
-      <button class="proj-button">
-        <a
-          href="https://keen-fermi-fae872.netlify.app/"
-          target="_blank"
-          ><i class="fas fa-globe"></i
-        ></a>
-      </button>
-      <button class="proj-button">
-        <a
-          href="https://github.com/Aneeqahj/testimonial-slider"
-          target="_blank"
-          ><i class="fab fa-github"></i
-        ></a>
-      </button>
-    </div>
-  </div>
-</div>
-<!-- Project container -->
-<div class="project-containers">
-  <!-- CARD IMAGE -->
-  <img
-    class="img"
-    src="./portfolio pics/timeline.png"
-    alt="Project cards"
-  />
-  <div class="proj-card-info">
-    <h3>Timeline</h3>
-    <!-- BUTTONS -->
-    <div class="proj-buttons">
-      <button class="proj-button">
-        <a
-          href="https://brave-noyce-0f15d8.netlify.app/"
-          target="_blank"
-          ><i class="fas fa-globe"></i
-        ></a>
-      </button>
-      <button class="proj-button">
-        <a
-          href="https://github.com/Aneeqahj/Timeline"
-          target="_blank"
-          ><i class="fab fa-github"></i
-        ></a>
-      </button>
-    </div>
-  </div>
-</div>
+      <!-- Project container -->
+      <div class="project-containers">
+        <!-- CARD IMAGE -->
+        <img
+          class="img"
+          src="./portfolio pics/testimonialslider.png"
+          alt="Project cards"
+        />
+        <div class="proj-card-info">
+          <h3>Testimonial Slider</h3>
+          <!-- BUTTONS -->
+          <div class="proj-buttons">
+            <button class="proj-button">
+              <a href="https://keen-fermi-fae872.netlify.app/" target="_blank"
+                ><i class="fas fa-globe"></i
+              ></a>
+            </button>
+            <button class="proj-button">
+              <a
+                href="https://github.com/Aneeqahj/testimonial-slider"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Project container -->
+      <div class="project-containers">
+        <!-- CARD IMAGE -->
+        <img
+          class="img"
+          src="./portfolio pics/timeline.png"
+          alt="Project cards"
+        />
+        <div class="proj-card-info">
+          <h3>Timeline</h3>
+          <!-- BUTTONS -->
+          <div class="proj-buttons">
+            <button class="proj-button">
+              <a href="https://brave-noyce-0f15d8.netlify.app/" target="_blank"
+                ><i class="fas fa-globe"></i
+              ></a>
+            </button>
+            <button class="proj-button">
+              <a href="https://github.com/Aneeqahj/Timeline" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </button>
+          </div>
+        </div>
+      </div>
 
-<!-- Project container -->
-<div class="project-containers">
-  <!-- CARD IMAGE -->
-  <img
-    class="img"
-    src="./portfolio pics/python.png"
-    alt="Project cards"
-  />
-  <div class="proj-card-info">
-    <h3>Python Temperature Convertor</h3>
-    <!-- BUTTONS -->
-    <div class="proj-buttons">
-      <button class="proj-button">
-        <a
-          href="https://replit.com/@Aneeqah/Python-temp-convertor"
-          target="_blank"
-          ><i class="fas fa-globe"></i
-        ></a>
-      </button>
-      <button class="proj-button">
-        <a
-          href="https://github.com/Aneeqahj/Python-temp-convertor"
-          target="_blank"
-          ><i class="fab fa-github"></i
-        ></a>
-      </button>
+      <!-- Project container -->
+      <div class="project-containers">
+        <!-- CARD IMAGE -->
+        <img
+          class="img"
+          src="./portfolio pics/python.png"
+          alt="Project cards"
+        />
+        <div class="proj-card-info">
+          <h3>Python Temperature Convertor</h3>
+          <!-- BUTTONS -->
+          <div class="proj-buttons">
+            <button class="proj-button">
+              <a
+                href="https://replit.com/@Aneeqah/Python-temp-convertor"
+                target="_blank"
+                ><i class="fas fa-globe"></i
+              ></a>
+            </button>
+            <button class="proj-button">
+              <a
+                href="https://github.com/Aneeqahj/Python-temp-convertor"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-</div>
-<script src="https://kit.fontawesome.com/297e065f7a.js" crossorigin="anonymous"></script>
+    <div class="footer">
+      <i class="far fa-copyright">Aneeqah Jones</i>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/297e065f7a.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

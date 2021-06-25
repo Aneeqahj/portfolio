@@ -1,0 +1,28 @@
+.testimonial {
+  width: 90%;
+  margin: 100px auto;
+  max-width: 600px;
+  position: relative;
+  padding: 50px 15px;
+  border: 1px solid grey;
+  border-top: 2px solid #a55425;
+}
+
+.testimonial .header {
+  display: flex;
+  top: -50%;
+  left: 50%;
+  background: #ffffff;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, 10%);
+}
+
+.testimonial .header img {
+  margin-right: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+}

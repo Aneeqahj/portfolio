@@ -1,0 +1,18 @@
+body {
+  display: grid;
+  place-content: center;
+}
+
+.projects {
+  width: 90%;
+  padding: 25px;
+  margin: 100px auto;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.project-containers {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
