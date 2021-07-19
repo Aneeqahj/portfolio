@@ -138,6 +138,7 @@ body {
   /*   width: 60vw; */
   /*   height: 60vh; */
   margin: 0 auto;
+  border-radius: 10px;
 }
 
 .card-bottom {
@@ -331,11 +332,6 @@ i {
   animation: progress-animation 2s linear infinite;
 }
 
-.tech-skills {
-  /* padding: 40px; */
-  /* margin-left: -63%; */
-}
-
 .icon {
   width: 100%;
   display: flex;
@@ -429,7 +425,7 @@ i {
 
 .proj-card-info {
   opacity: 0;
-  background-color: rgba(109, 43, 4, 0.678);
+  background-color: hsla(22, 51%, 44%, 0.849);
   transition: all 0.3s linear;
   display: flex;
   flex-direction: column;
@@ -441,7 +437,7 @@ i {
 }
 
 .proj-card-info h3 {
-  text-shadow: 0 0 3px #bf825f;
+  text-shadow: 0 0 3px #492d1d;
   color: #a55425;
   font-weight: lighter;
   font-size: 110%;
@@ -550,6 +546,7 @@ i {
 
 /* Contact */
 .contact {
+  margin-top: 6rem;
   background: white;
   box-shadow: 3px 3px 3px #a55425;
   backdrop-filter: blur(5.5px);
@@ -701,6 +698,7 @@ i {
     justify-content: space-evenly; */
     width: 100%;
     margin: 9% auto;
+    text-align: center;
   }
 
   .card-bottom {
@@ -744,5 +742,11 @@ i {
 @media screen and (min-width: 800px) {
   .skills-and-tech {
     flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .card-top {
+    margin-top: 2rem;
   }
 }
