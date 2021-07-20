@@ -3,14 +3,14 @@
   margin: 100px auto;
   max-width: 600px;
   position: relative;
-  padding: 50px 15px;
-  border: 1px solid grey;
+  padding: 62px 15px;
+  border: 1px solid #cb9b7c;
   border-top: 2px solid #a55425;
 }
 
 .testimonial .header {
   display: flex;
-  top: -50%;
+  top: -35%;
   left: 50%;
   background: #ffffff;
   position: absolute;
