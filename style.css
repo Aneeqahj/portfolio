@@ -9,7 +9,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: #835134;
   padding: 0%;
-  min-height: 85vh;
+  /* min-height: 100vh; */
 }
 
 /* Landing Page */
@@ -17,7 +17,7 @@ body {
   background-color: #cb9b7c;
   /* align-items: center; */
   /* background: black; */
-  box-shadow: 3px 3px 3px #a55425;
+  box-shadow: 10px 10px 20px #a5542582;
   backdrop-filter: blur(5.5px);
   -webkit-backdrop-filter: blur(5.5px);
   border-radius: 0;
@@ -121,13 +121,14 @@ body {
 
 .card-home {
   background: white;
-  box-shadow: 3px 3px 3px #a55425;
+  box-shadow: 10px 10px 20px #a5542582;
   border-radius: 10px;
   overflow: hidden;
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
   margin-top: 5%;
+  opacity: 1;
 }
 
 .card-top {
@@ -138,7 +139,9 @@ body {
   /*   width: 60vw; */
   /*   height: 60vh; */
   margin: 0 auto;
-  border-radius: 10px;
+  /* border-radius: 10px; */
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .card-bottom {
@@ -152,7 +155,7 @@ body {
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  margin-left: -100%;
+  margin-left: -118%;
   margin-top: 9%;
 }
 
@@ -263,7 +266,7 @@ i {
 
 .glassmorphism-2 {
   background: white;
-  box-shadow: 3px 3px 3px #a55425;
+  box-shadow: 10px 10px 20px #a5542582;
   backdrop-filter: blur(5.5px);
   -webkit-backdrop-filter: blur(5.5px);
   border-radius: 10px;
@@ -291,12 +294,17 @@ i {
   display: flex;
   justify-items: center;
   flex-direction: column;
+  font-weight: bolder;
+}
+
+.skill {
+  font-weight: bolder;
 }
 
 .skills-and-tech {
   width: 100%;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
 }
 
@@ -351,7 +359,7 @@ i {
 
 .projects {
   background: white;
-  box-shadow: 3px 3px 3px #a55425;
+  box-shadow: 10px 10px 20px #a5542582;
   backdrop-filter: blur(5.5px);
   -webkit-backdrop-filter: blur(5.5px);
   border-radius: 10px;
@@ -479,7 +487,7 @@ i {
 /* Testimonials */
 .Testimonial {
   background: white;
-  box-shadow: 3px 3px 3px #a55425;
+  box-shadow: 10px 10px 20px #a5542582;
   backdrop-filter: blur(5.5px);
   -webkit-backdrop-filter: blur(5.5px);
   border-radius: 10px;
@@ -552,7 +560,7 @@ i {
 .contact {
   margin-top: 6rem;
   background: white;
-  box-shadow: 3px 3px 3px #a55425;
+  box-shadow: 10px 10px 20px #a5542582;
   backdrop-filter: blur(5.5px);
   -webkit-backdrop-filter: blur(5.5px);
   border-radius: 10px;
@@ -570,19 +578,19 @@ i {
 }
 
 .button-con {
-  color: #835134;
+  color: white;
   border: 10px;
   height: 8vh;
-  width: 15vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #bf825f;
-  box-shadow: 2px 2px 2px #492d1d;
+  /* box-shadow: 2px 2px 2px #492d1d; */
   backdrop-filter: blur(5.5px);
   -webkit-backdrop-filter: blur(5.5px);
   border-radius: 10px;
-  margin-left: 30%;
+  margin-left: 6%;
   font-weight: normal;
   margin-bottom: 20%;
 }
@@ -594,9 +602,9 @@ i {
   padding: 5%;
   margin: 5%;
   width: 30vw;
-  border: none;
-  background: #d0a68a;
-  box-shadow: 2px 2px 2px #492d1d;
+  border: 1px solid #bf825f;
+  /* background: #d0a68a; */
+  /* box-shadow: 2px 2px 2px #492d1d; */
   backdrop-filter: blur(5.5px);
   -webkit-backdrop-filter: blur(5.5px);
   border-radius: 10px;
