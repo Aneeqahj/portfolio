@@ -155,7 +155,7 @@ body {
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  margin-left: -118%;
+  margin-left: -100%;
   margin-top: 9%;
 }
 
@@ -239,7 +239,9 @@ body {
   justify-items: center;
   /* margin-left: 30%; */
 }
-
+i:hover {
+  color: white;
+}
 i {
   color: #492d1d;
   display: flex;
@@ -255,6 +257,13 @@ i {
   align-items: center;
 }
 
+.iconify:hover {
+  color: white;
+}
+
+.span {
+  font-weight: bolder;
+}
 /* resume */
 
 #skills {
@@ -445,15 +454,21 @@ i {
 }
 
 .proj-card-info h3 {
-  text-shadow: 0 0 3px #492d1d;
-  color: #a55425;
+  text-shadow: 0 0 3px white;
+  color: white;
   font-weight: lighter;
   font-size: 110%;
   text-align: center;
   margin-top: 1.5vh;
   margin-bottom: 1vh;
 }
-
+.proj-card-info h4 {
+  text-shadow: 0 0 3px white;
+  color: white;
+  font-weight: lighter;
+  font-size: 110%;
+  text-align: center;
+}
 .proj-buttons {
   display: flex;
   flex-direction: row;
