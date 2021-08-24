@@ -605,7 +605,7 @@ i {
   backdrop-filter: blur(5.5px);
   -webkit-backdrop-filter: blur(5.5px);
   border-radius: 10px;
-  margin-left: 6%;
+  margin-left: 5%;
   font-weight: normal;
   margin-bottom: 20%;
 }
@@ -633,6 +633,15 @@ i {
   font-size: 40px;
   font-weight: normal;
 }
+.footer {
+  background: white;
+  z-index: 100;
+  width: 100%;
+  color: #2c1b11;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 25px;
+  text-align: center;
+}
 
 /* Buttons hover */
 .button1:hover {
@@ -654,20 +663,6 @@ i {
   background: #d0a68a;
 }
 
-.footer {
-  background: white;
-  z-index: 100;
-  width: 100%;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 25px;
-  text-align: center;
-}
-/* 
-.footer:hover {
-  font-size: 1.1em;
-  background: #835134; */
-/* } */
 .nav {
   display: none;
 }
@@ -802,5 +797,70 @@ i {
 @media screen and (max-width: 1024px) {
   .card-home {
     margin-top: 10%;
+  }
+}
+
+/* Animation for Body */
+.circ {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 10px;
+  height: 10px;
+  border-radius: 40%;
+  border: 1px solid #cb9b7c;
+  transform-origin: top left;
+  transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  animation: circ 12s ease-in forwards infinite;
+}
+
+.circ:nth-child(2n) {
+  border-color: #835134;
+}
+
+.circ:nth-child(2) {
+  animation-delay: 2s;
+  top: 40%;
+  left: 10%;
+}
+
+.circ:nth-child(3) {
+  animation-delay: 4s;
+  top: 10%;
+  left: 80%;
+}
+
+.circ:nth-child(4) {
+  animation-delay: 6s;
+  top: 80%;
+  left: 90%;
+}
+
+.circ:nth-child(5) {
+  animation-delay: 8s;
+  top: 50%;
+  left: 80%;
+}
+
+.circ:nth-child(6) {
+  animation-delay: 10s;
+  top: 90%;
+  left: 10%;
+}
+
+.circ:nth-child(7) {
+  animation-delay: 12s;
+  top: 50%;
+  left: 100%;
+}
+
+@keyframes circ {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(10) rotate(360deg) translate(-50%, -50%);
+    opacity: 0;
   }
 }
