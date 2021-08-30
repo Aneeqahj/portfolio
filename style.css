@@ -809,6 +809,7 @@ i {
   height: 10px;
   border-radius: 40%;
   border: 1px solid #cb9b7c;
+  z-index: -1;
   transform-origin: top left;
   transform: scale(0) rotate(0deg) translate(-50%, -50%);
   animation: circ 12s ease-in forwards infinite;
