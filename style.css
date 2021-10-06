@@ -296,6 +296,8 @@ i {
 
 .education-container {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
   /* margin-right: 30%; */
 }
 
@@ -304,6 +306,33 @@ i {
   justify-items: center;
   flex-direction: column;
   font-weight: bolder;
+}
+
+.stack {
+  display: flex;
+  justify-items: center;
+  align-items: flex-start;
+  flex-direction: column;
+  font-weight: bolder;
+}
+
+.languages {
+  display: flex;
+  flex-direction: column;
+}
+
+.education {
+  width: 50%;
+  max-width: 600px;
+}
+
+.tech-stack {
+  width: 45%;
+  max-width: 600px;
+  display: flex;
+  justify-items: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .skill {
@@ -320,8 +349,6 @@ i {
 .skills-container,
 .tech-skills {
   width: 45%;
-  /* padding: 40px; */
-  /* margin-left: -67%; */
 }
 
 .progress {
@@ -750,12 +777,15 @@ i {
     padding: 25px;
   }
 
-  .skills-and-tech {
+  .skills-and-tech,
+  .education-container {
     flex-direction: column;
   }
 
   .skills-container,
-  .tech-skills {
+  .tech-skills,
+  .education,
+  .tech-stack {
     width: 100%;
   }
 
@@ -864,4 +894,10 @@ i {
     transform: scale(10) rotate(360deg) translate(-50%, -50%);
     opacity: 0;
   }
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
 }
