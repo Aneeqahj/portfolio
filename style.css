@@ -239,9 +239,7 @@ body {
   justify-items: center;
   /* margin-left: 30%; */
 }
-i:hover {
-  color: white;
-}
+
 i {
   color: #492d1d;
   display: flex;
@@ -718,7 +716,7 @@ i {
 
   #navbar {
     height: 100vh;
-    top: -120%;
+    top: -150%;
   }
 
   #navbar.active {
