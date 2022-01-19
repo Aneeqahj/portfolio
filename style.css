@@ -131,6 +131,10 @@ body {
   opacity: 1;
 }
 
+i:hover {
+  color: #fff;
+}
+
 .card-top {
   display: flex;
   background: #cb9b7c;
